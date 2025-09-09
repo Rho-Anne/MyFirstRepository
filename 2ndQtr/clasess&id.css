@@ -1,0 +1,36 @@
+.head {
+   background-color: #76bfd3;
+width: 90%;
+float: left;
+border: 2px solid #000000;
+margin: 2%;
+border-radius: 25px;
+box-shadow: 10px 10px 5px #aaaaaa;
+height: 160px;
+text-align: center;
+}
+
+
+.content {
+    text-align: center;
+   background-color: #BBDCE5;
+width: 50%;
+float: left;
+border: 2px solid #000000;
+margin: 3%;
+border-radius: 25px;
+box-shadow: 10px 10px 5px #aaaaaa;
+height: 190px;
+}
+
+.sub .content{
+    text-align: center  ;
+background-color: #D6EAF8;
+float: left;
+border: 2px solid #000000;
+margin: 2%;
+border-radius: 25px;
+box-shadow: 10px 10px 5px #aaaaaa;
+width:29% ;
+height: 150px;
+}
