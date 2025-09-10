@@ -1,36 +1,182 @@
 .head {
-   background-color: #76bfd3;
-width: 90%;
-float: left;
-border: 2px solid #000000;
-margin: 2%;
-border-radius: 25px;
-box-shadow: 10px 10px 5px #aaaaaa;
-height: 160px;
-text-align: center;
+	background-color: #76bfd3;
+	width: 90%;
+	float: left;
+	border: 2px solid #000000;
+	margin: 2%;
+	border-radius: 25px;
+	box-shadow: 10px 10px 5px #aaaaaa;
+	height: 160px;
+	text-align: center;
 }
 
+body{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
 
 .content {
-    text-align: center;
-   background-color: #BBDCE5;
-width: 50%;
-float: left;
-border: 2px solid #000000;
-margin: 3%;
-border-radius: 25px;
-box-shadow: 10px 10px 5px #aaaaaa;
-height: 190px;
+	text-align: center;
+	background-color: #bbdce5;
+	width: 70%;
+	float: left;
+	border: 2px solid #000000;
+	margin: 3%;
+	border-radius: 25px;
+	box-shadow: 10px 10px 5px #aaaaaa;
+	height: 180px;
 }
 
-.sub .content{
-    text-align: center  ;
-background-color: #D6EAF8;
-float: left;
-border: 2px solid #000000;
-margin: 2%;
-border-radius: 25px;
-box-shadow: 10px 10px 5px #aaaaaa;
-width:29% ;
-height: 150px;
+.sub-content {
+	text-align: center;
+	background-color: #d6eaf8;
+	float: left;
+	border: 2px solid #000000;
+	margin: 2%;
+	border-radius: 25px;
+	box-shadow: 10px 10px 5px #aaaaaa;
+	width: 25%;
+	height: 120px;
+    
+}
+
+.content2 {
+	text-align: center;
+	background-color: #d6eaf8;
+	float: left;
+	border: 2px solid #000000;
+	margin: 5%;
+	border-radius: 25px;
+	box-shadow: 10px 10px 5px #aaaaaa;
+	width: 60%;
+	height: 570px;
+	margin-bottom: 5%;
+}
+
+#manila {
+	background-color: #0095ff;
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 30px;
+	text-align: center;
+}
+#cebu {
+	background-color: #ff8000;
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 30px;
+
+}
+#davao {
+	background-color: #ff0000;
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 30px;
+
+}
+#Pacific {
+	background-color: #00ff40;
+	font-family:'Verdana', Geneva, Tahoma, sans-serif;
+	font-size: 30px;
+
+}
+#Atlantic {
+	background-color: #ffff00;
+	font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+	font-size: 30px;
+
+}
+#Indian {
+	background-color: #ff00ff;
+	font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+	font-size: 30px;
+
+}
+#Asia {
+	background-color: #ff0080;
+	font-family:fantasy;
+	font-size: 30px;
+
+}
+#Europe {
+	background-color: #8000ff;
+	font-family:fantasy;
+	font-size: 30px;
+
+}
+#Africa {
+	background-color: #00ffff;
+	font-family:fantasy;
+	font-size: 30px;
+
+}
+
+.content3 {
+	text-align: center;
+	background-color: #d6eaf8;
+	float: left;
+	border: 2px solid #000000;
+	margin: 5%;
+	border-radius: 25px;
+	box-shadow: 10px 10px 5px #aaaaaa;
+	width: 90%;
+	height: 570px;
+	margin-top: 15%;
+}
+
+#one {
+	background-color: #AE75DA;
+	font-family: cursive;
+	font-size: 30px;
+
+}
+
+#two {
+	background-color: #FF75DA;
+	font-family: cursive;
+	font-size: 30px;
+
+}
+
+#three {
+	background-color: #640D5F;
+	font-family: cursive;
+	font-size: 30px;
+	color: white;
+}
+#four {
+	background-color: #BA487F;
+	font-family: cursive;
+	font-size: 30px;
+
+}
+#five {
+	background-color: #9929EA;
+	font-family:cursive;
+	font-size: 30px;
+
+}
+#six {
+	background-color: #4DFFBE;
+	font-family: cursive;
+	font-size: 30px;
+	color: black;
+
+}
+#seven {
+	background-color: #687FE5;
+	font-family: cursive	;
+	font-size: 30px;
+
+}
+#eight {
+	background-color: #EBD6FB;
+	font-family: cursive;
+	font-size: 30px;
+
+}
+#nine {
+	background-color: #0000FF;
+	font-family: cursive;
+	font-size: 30px;
+	color: white;
+
 }
