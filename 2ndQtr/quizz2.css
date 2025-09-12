@@ -1,0 +1,45 @@
+.head {
+   background-color: powderblue;
+	width: 90%;
+	float: left;
+	border: 2px solid #000000;
+	margin: 2%;
+	border-radius: 25px;
+	box-shadow: 1px 10px 10px #ff0000;
+	height: 120px;
+	text-align: center;
+    border-color: #ff0000;
+}
+
+body{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.title {
+	width: 60%;
+	float: left;
+	border: 2px solid #000000;
+	border-radius: 25px;
+	box-shadow: 1px 10px 10px yellow;
+	height: 120px;
+	text-align: left;
+    border-color: yellow;
+}
+
+
+
+.image1{
+    background-color: rgb(222, 221,221);
+    width: 25%;
+	float:left;
+    height: 40px;
+	border: 2px solid #000000;
+	border-radius: 25px;
+	box-shadow: 1px 10px 10px blue;
+	height: 120px;
+	text-align: left;
+    border-color: yellow;
+
+}
