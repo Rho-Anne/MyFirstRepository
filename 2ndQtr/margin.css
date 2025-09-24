@@ -1,0 +1,34 @@
+.container {
+	display: grid;
+	grid-template-columns: repeat(3, 80px);
+	grid-template-rows: repeat(3, 80px);
+	gap: 0;
+	border: 2px solid black;
+	width: max-content;
+
+	margin-top: 2px;
+}
+
+.container div {
+	display: flex;
+	gap: 100px;
+}
+
+.box {
+	background-color: lightcyan;
+	border: 1px solid plum;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: fantasy;
+	font-size: 14px;
+}
+
+.middle {
+	background-color: lightcyan;
+	border: 1px solid plum;
+	align-items: left;
+	font-size: bold;
+	margin-left: 10px;
+	background-color: lightcyan;
+}

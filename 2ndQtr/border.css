@@ -1,0 +1,113 @@
+.border {
+    border-width: 5px;
+    border-color: red;
+   border-radius: 20px;
+    border-style: solid;
+    width: 1335px;
+}
+p.dotted 
+{   border-style: dotted;
+    width:1300px;
+    margin:1%;
+}
+
+p.dashed 
+{   border-style: dashed;
+width:1300px;
+    margin:1%;}
+
+p.solid 
+{   border-style: solid;
+    width:1300px;
+    margin:1%;
+}
+
+p.double
+{   border-style: double;
+    width:1300px;
+    margin:1%;}
+
+p.groove 
+{   border-style: groove;
+    width:1300px;
+    margin:1%;}
+
+p.ridge 
+{   border-style: ridge;
+    width:1300px;
+    margin:1%;}
+
+p.inset 
+{   border-style: inset;
+    width:1300px;
+    margin:1%;}
+
+p.outset 
+{   border-style: outset;
+    width:1300px;
+    margin:1%;}
+
+p.none 
+{   border-style: none;
+    width:1300px;
+    margin:1%;}
+
+p.hidden 
+{   border-style: hidden;
+    width:1300px;
+    margin:1%;}
+
+p.mix 
+{   border-style: dotted dashed solid double;
+    width:1300px;
+    margin:1%;}
+
+.contaner {
+    border-width: 5px;
+    border-color: red;
+   border-radius: 20px;
+    border-style: solid;
+    width: 1335px;
+}
+
+p.solid {
+    border-style: solid;
+    border-width: 2px;
+    width: 1300px;
+    margin: 1%;
+}
+
+p.grooved {
+    border-style: groove;
+    border-width: 15px;
+    width: 1300px;
+    margin: 1%;
+}
+
+p.ridged {
+    border-style: ridge;
+    border-width: 35px;
+    width: 1300px;
+    margin: 1%;
+}
+
+p.no {
+    border-style: ridge;
+    border-width: thin;
+    width: 1300px;
+    margin: 1%;
+}
+
+p.medium {
+    border-style: inset;
+    border-width: medium;
+    width: 1300px;
+    margin: 1%;
+}
+
+p.thick {
+    border-style: outset;
+    border-width: thick;
+    width: 1300px;
+    margin: 1%;
+}

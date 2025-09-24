@@ -1,0 +1,121 @@
+.single {
+	border-color: blue;
+	border-radius: 20px;
+	border-style: solid;
+	border-radius: 15px;
+	margin-bottom: 20px;
+}
+.single div {
+	display: flex;
+	gap: 25px;
+}
+
+.left {
+	padding-left: 10px;
+	width: 15px;
+	border: solid blue;
+	margin-left: 10px;
+	border-radius: 15px;
+	width: 110px;
+	height: 55px;
+}
+
+.right {
+	padding-right: 15px;
+	border: solid blue;
+	border-radius: 15px;
+	width: 10%;
+	height: 55px;
+}
+
+.top {
+	padding-top: 25px;
+	border: solid blue;
+	border-radius: 15px;
+	width: 100px;
+}
+
+.bottom {
+	padding-bottom: 35px;
+	border: solid blue;
+	border-radius: 15px;
+	width: 8%;
+}
+
+.multi {
+	border-color: blue;
+	border-radius: 20px;
+	border-style: solid;
+	border-radius: 15px;
+	margin-bottom: 20px;
+}
+
+.multi div {
+	display: flex;
+	gap: 25px;
+
+}
+
+.topright {
+	padding-right: 10px;
+	width: 50px;
+	border: solid blue;
+	margin-left: 10px;
+	border-radius: 15px;
+	width: 110px;
+	height: 76px;
+	padding-top: 10px;
+}
+
+.bottoms {
+	padding-right: 15px;
+	padding-bottom: 15px;
+	width: 50px;
+	border: solid blue;
+	margin-left: 10px;
+	border-radius: 15px;
+	width: 110px;
+	height: 76px;
+	
+}
+
+.bottomleft {
+	padding-left: 25px;
+	padding-bottom: 25px;
+	width: 50px;
+	border: solid blue;
+	margin-left: 10px;
+	border-radius: 15px;
+	width: 110px;
+	height: 76px;
+}
+
+.lefts {
+	padding-left: 35px;
+	padding-top: 35px;
+	width: 50px;
+	border: solid blue;
+	margin-left: 10px;
+	border-radius: 15px;
+	width: 110px;
+	height: 55px;
+
+}
+
+.all {
+	border-color: blue;
+	border-radius: 20px;
+	border-style: solid;
+	border-radius: 15px;
+	
+}
+
+.side {
+	padding:25px;
+	width: 50px;
+	border: solid blue;
+	margin-left: 10px;
+	border-radius: 15px;
+	width: 110px;
+	height: 76px;
+}
