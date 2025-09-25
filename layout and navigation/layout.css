@@ -1,8 +1,6 @@
 
-
-
 header {
-  background-color: #A45EE4;
+  background-color: #A5B68D;
   padding: 30px;
   text-align: center;
   font-size: 35px;
@@ -11,9 +9,10 @@ header {
 
 nav {
   float: left;
-  width: 20%;
-  height: 350px; /* only for demonstration, should be removed */
-  background: #CBA2C9;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #C1CFA1;
+
 }
 
 /* Style the list inside the menu */
@@ -21,10 +20,18 @@ nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  background-color: #CBA2C9;
+  background-color: #EDE8DC;
 }
 
-nav li a {
+ul li a:hover:not(.active) {
+  background-color:#A5B68D;
+}
+
+ul li a.active {
+  background-color: #E7CCCC;
+}
+
+nav li a { 
     display: block;
     color: black;
     padding: 8px 16px;
@@ -35,8 +42,8 @@ nav li a {
 article {
   float: left;
   padding: 20px;
-  width: 76.4%;
-  background-color: #f1f1f1;
+  width: 70%;
+  background-color: #E7CCCC;
   height: 300px; /* only for demonstration, should be removed */
 }
 
@@ -48,7 +55,7 @@ section::after {
 }
 
 footer {
-  background-color: #A45EE4;
+  background-color: #A5B68D;
   padding: 10px;
   text-align: center;
   color: white;
@@ -62,6 +69,10 @@ footer {
 }
 
 a:hover {
-    background-color: rgb(186, 4, 186);
+    background-color: #A5B68D;
     font-size: 18px;
 }                                   
+
+*{
+  box-sizing: border-box;
+}
