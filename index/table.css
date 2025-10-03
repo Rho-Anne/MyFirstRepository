@@ -1,0 +1,31 @@
+table{
+    width: 135%;
+    border-collapse: collapse;
+}
+ td, th, tr {
+    border: 2px solid black;
+    padding: 8px;
+text-align: center;
+
+}
+
+ th {
+        background-color: #fbe4ff;
+        font-weight: bold;
+    }
+    tr:nth-child(even) {
+        background-color: #fbe4ff;
+    }
+      
+ td {
+        background-color: #fbe4ff;
+    }
+    
+ tr:hover {
+        background-color: #d1c4e9;
+    }
+    
+ caption {
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
