@@ -43,7 +43,7 @@ nav li a {
 article {
   float: left;
   padding: 20px;
-  width: 70%;
+  width: auto;
   background-color: #E7CCCC;
   height: auto; /* only for demonstration, should be removed */
   
