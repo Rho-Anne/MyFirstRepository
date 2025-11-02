@@ -1,0 +1,116 @@
+header {
+  background-color: #A5B68D;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  
+}
+
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; 
+  background: #C1CFA1;
+  position: sticky;
+  top: 0px;
+}
+
+.flex {
+    display: flex;
+	gap: .1px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color: #EDE8DC;
+}
+
+ul li a:hover:not(.active) {
+  background-color:#A5B68D;
+}
+
+ul li a.active {
+  background-color: #E7CCCC;
+}
+
+nav li a { 
+    display: block;
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    padding-bottom: 10%;
+}
+
+
+article {
+  float: left;
+  padding: 20px;
+  width: auto;
+  background-color: #E7CCCC;
+  height: auto; /* only for demonstration, should be removed */
+  
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+  
+}
+
+footer {
+  height: 50px;
+    width: 125rem;
+    border: solid 2px #A5B68D;
+    background-color: #A5B68D;
+    position: fixed;
+    bottom: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+@media (max-width:600px) {
+    nav, article {
+        width: 100px;
+        height: auto;
+    }
+}
+
+a:hover {
+    background-color: #A5B68D;
+    font-size: 18px;
+}                                   
+
+*{
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1200px) {
+  nav {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  
+  article {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  nav ul li a {
+    float: left;
+    padding: 15px;
+  }
+}
+
+.act{ flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

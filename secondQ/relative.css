@@ -1,0 +1,162 @@
+#header {
+    height: 50px;
+    width: 1125px;
+    border: solid 2px plum;
+    background-color: plum;
+    position: fixed;
+    top: -20px;
+    
+
+}
+#container {
+    
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border:solid 2px purple;
+
+}
+
+#adss{
+    height: 90px;
+    width: 125px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    background-color: brown;
+    gap: 5px;}
+
+
+#stickyheader{
+    height: 50px;
+    width: 1125px;
+    background-color: yellow;
+    position: sticky;
+    top: 50px;
+    left: 0px;
+    
+    
+}
+    
+
+#content {
+    position: relative;
+    top: 47px;
+    width: 200px;
+    height: 200px;
+    border:solid 2px orange;
+    left: 47px;
+}
+
+#container2 {
+    
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border:solid 2px purple;
+
+}
+
+#content2 {
+    position: relative;
+    top: 47px;
+    width: 200px;
+    height: 200px;
+    border:solid 2px orange;
+    left: 47px;
+}
+
+
+
+#container3 {
+    
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border:solid 2px purple;
+
+}
+
+#content3 {
+    position: relative;
+    top: 47px;
+    width: 200px;
+    height: 200px;
+    border:solid 2px orange;
+    left: 47px;
+
+}
+
+#container4 {
+    
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border:solid 2px purple;
+
+}
+
+#content4 {
+    position: relative;
+    top: 47px;
+    width: 200px;
+    height: 200px;
+    border:solid 2px orange;
+    left: 47px;
+}
+
+#container5 {
+    
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border:solid 2px purple;
+
+}
+
+#content5 {
+    position: relative;
+    top: 47px;
+    width: 200px;
+    height: 200px;
+    border:solid 2px orange;
+    left: 47px;
+}
+
+#container6 {
+    
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border:solid 2px purple;
+
+}
+
+#content6 {
+    position: relative;
+    top: 47px;
+    width: 200px;
+    height: 200px;
+    border:solid 2px orange;
+    left: 47px;
+}   
+
+
+#footer {
+    height: 50px;
+    width: 1125px;
+    border: solid 2px plum;
+    background-color: plum;
+    position: fixed;
+    bottom: 0px;
+    padding: 0px;
+    
+}
+
+#footer p{
+    margin-top: 5px;
+    color: white;
+    text-align: center;
+}
+

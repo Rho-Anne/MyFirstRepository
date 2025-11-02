@@ -32,3 +32,34 @@
 	margin-left: 10px;
 	background-color: lightcyan;
 }
+
+.letf{
+	padding-left: px;
+}
+
+.right{
+	background-color: lightcyan;
+	border: 1px solid plum;
+	align-items: right;
+	font-size: bold;
+	margin-right: 10px;
+	background-color: lightcyan;
+}
+
+.top{ 
+	background-color: lightcyan;
+	border: 1px solid plum;
+	align-items: top;
+	font-size: bold;
+	margin-top: 10px;
+	background-color: lightcyan;
+}
+
+.bottom{
+	background-color: lightcyan;
+	border: 1px solid plum;
+	align-items: bottom;
+	font-size: bold;
+	margin-bottom: 10px;
+	background-color: lightcyan;
+}
