@@ -9,17 +9,15 @@ header {
 
 nav {
   float: left;
-  width: 30%;
-  height: 300px; 
+  width: 26%;
+  height: 0px; 
   background: #C1CFA1;
   position: sticky;
   top: 0px;
 }
 
-.flex {
-    display: flex;
-	gap: .1px;
-}
+
+
 
 /* Style the list inside the menu */
 nav ul {
@@ -27,6 +25,7 @@ nav ul {
   padding: 0;
   margin: 0;
   background-color: #EDE8DC;
+  
 }
 
 ul li a:hover:not(.active) {
@@ -49,9 +48,11 @@ nav li a {
 article {
   float: left;
   padding: 20px;
-  width: auto;
+  width: 74%;
   background-color: #E7CCCC;
-  height: auto; /* only for demonstration, should be removed */
+  height: 40%; 
+  margin-left: 26%;
+  margin-right: 1%;
   
 }
 
