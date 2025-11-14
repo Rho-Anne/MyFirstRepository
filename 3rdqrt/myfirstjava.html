@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Java Program</title>
+<script src="myjava.js"></script>
+</head>
+<body>
+    <h2>My First Java</h2>
+    <h4>hatdog in the body of html.</h4>
+    <p id="p1">Paragraph to na dapat mapalitan.</p>
+    
+    <button type="button" onclick="chnagep1()" >click on me </button>
+    <br>
+<hr>
+     <p id="p2">Paragraph to na dapat mapalitan.</p>
+      <button type="button" onclick="chnagep2()" >click on me </button>
+    <hr>
+    <p id="P3">Paragraph to na dapat mapalitan.</p>
+    <button type="button" onclick="chnagep3()" >click on me </button>
+
+    <br>
+    <hr>
+    <h2>Alert to ha</h2>
+    <button type="button" onclick="alert1()"> pindutin mo ako</button>
+    <button type="button" onclick="alert2()">Pindutin mo ako</button>
+    <button type="button" onclick="alert3()">Pindutin mo ako pls</button>
+   
+    <hr>
+    <h2>Basta Console daw</h2>
+    <button type="button" onclick="console1()"> YEss</button>
+    <button type="button" onclick="console2()">Nour</button>
+    <button type="button" onclick="console3()">Pindutin mo ako pls</button>
+
+    <hr>
+    <h2>Basta Doc Write</h2>
+    <button type="button" onclick="docwrite()">Para ma tanggal lahat </button>
+
+    <script>
+
+
+
+        function chnagep1 () {
+            document.getElementById("p1").innerHTML = "Nabago na ako ";
+        }
+
+        function chnagep2 () {
+            document.getElementById("p2").innerHTML = "Nabago na ulit ako ";
+        }  
+    
+        function alert1() {
+            window.alert("This is an alert from myfirstjava.html file!");
+        }
+        function alert2() {
+            window.alert("This is an alert from myfirstjava.html file!");
+        }
+        function alert3() {
+            window.alert("This is an alert from myfirstjava.html file!");
+        }
+
+
+        function console1() {
+            console.log("This is a console log from myfirstjava.html file!");
+        }
+
+        function console2() {
+            console.log("This is a console log from myfirstjava.html file!");
+        }
+
+        function docwrite() {
+            document.write("All content has been removed!");
+        }
+    </script>
+
+
+</body>
+</html>
