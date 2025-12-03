@@ -11,7 +11,7 @@ numInputBtn.addEventListener('click', () => {
     }
 
     for (let i = 1; i <= n; i++) {
-        resultDiv.innerHTML = 'Galing, Good GOO(n)d.';
+        resultDiv.innerHTML = 'Galing, Good GOOOD.';
     }
 
     let output = '';
