@@ -7,16 +7,99 @@
     <link rel="stylesheet" href="prac.css">
 </head>
 <body>
-    <h1>Practical Quiz</h1>
     <section class="loop">
-        <h2>This is loops</h2>
-        <label for="input">Right here:</label>
-        <input id="input" type="number" min="1" placeholder="Enter a number here">
-        <button id="submit">Click me</button>
-        <button id="clear">Clear</button>
+        <h2></h2>
+        <label for="input">Enter your money here:</label>
+        <input id="input" type="number" min="1" placeholder="Right here">
+
+        
+        <select id="moneyy">
+            <option value="100">100</option>
+            <option value="90">90</option>
+            <option value="80">80</option>  
+            <option value="70">70</option>
+            <option value="60">60</option>
+            <option value="50">50</option>  
+            <option value="40">40</option>
+            <option value="30">30</option>
+            <option value="25">25</option>  
+            <option value="20">20</option>
+            <option value="15">15</option>
+            <option value="10">10</option>  
+        </select>
+
+        <button id="submit">Click</button>
         <p class="result" id="resulthere" aria-live="polite"></p>
     </section>
 
-    <script src="practical.js"></script>
+    <p id="ifElseResult">Ano dapat mong gawin?</p>
+
+    <script>
+        const num = document.getElementById('input');
+        const numInputBtn = document.getElementById('submit');
+        const resultDiv = document.getElementById('resulthere');
+        const ifElseDiv = document.getElementById('ifElseResult');
+        const moneyy = document.getElementById('moneyy');
+
+        numInputBtn.addEventListener('click', () => {
+            const n = Number(num.value);
+            if (isNaN(n) || n < 1 || n > 100) {
+                resultDiv.textContent = 'Please enter a valid number (1 to 100).';
+                resultDiv.style.color = 'purple';
+                return;
+            }
+
+            let output = '';    
+            for (let i = 1; i <= n; i++) {
+                output += `Counting: ${i}\n`;
+            }
+        
+            resultDiv.textContent = output;
+            resultDiv.style.color = 'violet';
+
+            //switch
+            switch(moneyy.value){
+                case '100':
+                    ifElseDiv.textContent = ' Rich! palibre';
+                    break;
+                case '90':
+                    ifElseDiv.textContent = 'Poor, ipon pa!';
+                    break;
+                case '80':
+                    ifElseDiv.textContent = 'Poor, ipon pa!';
+                    break;
+                case '70':
+                    ifElseDiv.textContent = 'Poor, ipon pa!';
+                    break;
+                case '60':
+                    ifElseDiv.textContent = 'Poor, ipon pa!';
+                    break;
+                case '50':
+                    ifElseDiv.textContent = 'Poor, ipon pa!';
+                    break;
+                case '40':
+                    ifElseDiv.textContent = 'Poor, ipon pa!';
+                    break;
+                case '30':
+                    ifElseDiv.textContent = 'Poor, ipon pa!';
+                    break;
+                case '25':
+                    ifElseDiv.textContent = 'Poor, ipon pa!';
+                    break;
+                case '20':
+                    ifElseDiv.textContent = 'Poor, ipon pa!r';
+                    break;
+                case '15':
+                    ifElseDiv.textContent = 'Poor, ipon pa!';
+                    break;
+                case '10':
+                    ifElseDiv.textContent = 'Poor, ipon pa!';
+                    break;
+                default:
+                    ifElseDiv.textContent = 'Invalid choice';
+            }
+            ifElseDiv.style.color = 'green';
+        });
+    </script>
 </body>
 </html>
