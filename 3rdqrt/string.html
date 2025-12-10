@@ -9,10 +9,10 @@
 
     <h2>This is Addition</h2>
     <label for="num1"> </label>
-    <input type="text" id="num1" name="num1" placeholder="First Number"><br>
+    <input type="text" id="num1" name="num1" placeholder="Addend One"><br>
 
     <label for="num2"></label>
-    <input type="text" id="num2" name="num2" placeholder="Second Number"><br>
+    <input type="text" id="num2" name="num2" placeholder="Addend Two"><br>
     <br>
     <button id="addNumbers">To Add </button>
 
@@ -21,10 +21,10 @@
     <!-- Subtraction Part -->
     <h2>This is Subtraction</h2>
      <label for="minu1"> </label>
-    <input type="text" id="minu1" name="minu1" placeholder="Minus Frist"><br>
+    <input type="text" id="minu1" name="minu1" placeholder="Minuend"><br>
 
     <label for="nimu2"></label>
-    <input type="text" id="nimu2" name="nimu2" placeholder="Minus Second"><br>
+    <input type="text" id="nimu2" name="nimu2" placeholder="Subtrahend"><br>
     <br>
     <button id="Subtraction">To Subtract </button>
 
@@ -32,15 +32,27 @@
 
     <!--Thisis Divition-->
     <h2>This is Division</h2>
-     <label for="minu1"> </label>
-    <input type="text" id="minu1" name="minu1" placeholder="Minus Frist"><br>
+     <label for="dividen1"> </label>
+    <input type="text" id="dividen1" name="dividen1" placeholder="Dividend"><br>
 
-    <label for="nimu2"></label>
-    <input type="text" id="nimu2" name="nimu2" placeholder="Minus Second"><br>
+    <label for="dividen2"></label>
+    <input type="text" id="dividen2" name="dividen2" placeholder="Divisor"><br>
     <br>
-    <button id="Subtraction">To Subtract </button>
+    <button id="division">To Divide </button>
 
-    <p id="Difference">Difference</p>
+    <p id="answer">Quotient</p>
+
+    <!--Thisis Multiplication-->
+    <h2>This is Multiplication</h2>
+     <label for="factor1"> </label>
+    <input type="text" id="factor1" name="factor1" placeholder="Factor1"><br>
+
+    <label for="factor2"></label>
+    <input type="text" id="factor2" name="factor2" placeholder="Factor2"><br>
+    <br>
+    <button id="multip">To Multiply </button>
+
+    <p id="product">Product</p>
 
     <script>
         const addNumbers = document.getElementById("addNumbers");
@@ -74,11 +86,27 @@
             const subtrahend = document.getElementById("nimu2").value;
             const sum = Number(minuend) - Number(subtrahend);
             console.log(sum);
-            document.getElementById("Difference").innerText = `Answer: ${sum}`;
+            document.getElementById("Difference").innerText = `Difference: ${sum}`;
         });
       
 
         // Division Part
+         const division = document.getElementById("division");
+        const answer = document.getElementById("answer");
+
+        
+        const dividen1 = document.getElementById("dividen1").value;
+        const dividen2 = document.getElementById("dividen2").value;
+        document.getElementById("answer").innerText = `Anwer ${dividen1}  ${dividen2}`;
+
+        division.addEventListener("click", function() {
+            const dividen = document.getElementById("dividen1").value;
+            const quotient = document.getElementById("dividen2").value;
+            const sum = Number(dividen) / Number(quotient);
+            console.log(sum);
+            document.getElementById("answer").innerText = `Quotient: ${sum}`;
+        });
+      
          
     </script>
 </body>

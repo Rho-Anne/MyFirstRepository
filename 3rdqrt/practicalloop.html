@@ -1,105 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Loop</title>
-    <link rel="stylesheet" href="prac.css">
-</head>
-<body>
+    <link rel="stylesheet" href="prac.css" />
+  </head>
+  <body>
     <section class="loop">
-        <h2></h2>
-        <label for="input">Enter your money here:</label>
-        <input id="input" type="number" min="1" placeholder="Right here">
+      <h1>Welcome to "Te amo" Milktea Shop 🧋 </h1>
+      <label for="input">Place your money here:</label>
+      <input id="input" type="number" min="1" placeholder="Right here" />
+      <br />
 
-        
-        <select id="moneyy">
-            <option value="100">100</option>
-            <option value="90">90</option>
-            <option value="80">80</option>  
-            <option value="70">70</option>
-            <option value="60">60</option>
-            <option value="50">50</option>  
-            <option value="40">40</option>
-            <option value="30">30</option>
-            <option value="25">25</option>  
-            <option value="20">20</option>
-            <option value="15">15</option>
-            <option value="10">10</option>  
-        </select>
+      <label for="size">Please choose what size do you want</label>
+      <select id="moneyy">
+        <option value="small">Little Kiss (Small) ₱39 </option>
+        <option value="medium">Sweet Cup (Medium) ₱69</option>
+        <option value="large">Warm Heart (Large) ₱85</option>
+        <option value="xl">Big Hug (XL) ₱110</option>
+      </select>
 
-        <button id="submit">Click</button>
-        <p class="result" id="resulthere" aria-live="polite"></p>
+      <button id="submit">Click</button>
+      <p class="result" id="resulthere" aria-live="polite"></p>
     </section>
 
-    <p id="ifElseResult">Ano dapat mong gawin?</p>
+    <p id="ifElseResult">Wait for your Order pleasee</p>
 
     <script>
-        const num = document.getElementById('input');
-        const numInputBtn = document.getElementById('submit');
-        const resultDiv = document.getElementById('resulthere');
-        const ifElseDiv = document.getElementById('ifElseResult');
-        const moneyy = document.getElementById('moneyy');
+      alert("Welcome to my Milktea shop!");
+      
 
-        numInputBtn.addEventListener('click', () => {
-            const n = Number(num.value);
-            if (isNaN(n) || n < 1 || n > 100) {
-                resultDiv.textContent = 'Please enter a valid number (1 to 100).';
-                resultDiv.style.color = 'purple';
-                return;
-            }
+      const num = document.getElementById("input");
+      const numInputBtn = document.getElementById("submit");
+      const resultDiv = document.getElementById("resulthere");
+      const ifElseDiv = document.getElementById("ifElseResult");
+      const moneyy = document.getElementById("moneyy");
 
-            let output = '';    
-            for (let i = 1; i <= n; i++) {
-                output += `Counting: ${i}\n`;
-            }
+      numInputBtn.addEventListener("click", () => {
+        const n = Number(num.value);
+        if (isNaN(n) || n < 1 || n > 110) {
+          resultDiv.textContent = "Thanks for ordering.";
+          resultDiv.style.color = "purple";
+          return;
+        }
+
+        let output = "";
         
-            resultDiv.textContent = output;
-            resultDiv.style.color = 'violet';
+        //Get input value
+        // Get money value
+        
+        // condition: check kung ano yung size na pinili 
+        // match yung price ng size sa input value
 
-            //switch
-            switch(moneyy.value){
-                case '100':
-                    ifElseDiv.textContent = ' Rich! palibre';
-                    break;
-                case '90':
-                    ifElseDiv.textContent = 'Poor, ipon pa!';
-                    break;
-                case '80':
-                    ifElseDiv.textContent = 'Poor, ipon pa!';
-                    break;
-                case '70':
-                    ifElseDiv.textContent = 'Poor, ipon pa!';
-                    break;
-                case '60':
-                    ifElseDiv.textContent = 'Poor, ipon pa!';
-                    break;
-                case '50':
-                    ifElseDiv.textContent = 'Poor, ipon pa!';
-                    break;
-                case '40':
-                    ifElseDiv.textContent = 'Poor, ipon pa!';
-                    break;
-                case '30':
-                    ifElseDiv.textContent = 'Poor, ipon pa!';
-                    break;
-                case '25':
-                    ifElseDiv.textContent = 'Poor, ipon pa!';
-                    break;
-                case '20':
-                    ifElseDiv.textContent = 'Poor, ipon pa!r';
-                    break;
-                case '15':
-                    ifElseDiv.textContent = 'Poor, ipon pa!';
-                    break;
-                case '10':
-                    ifElseDiv.textContent = 'Poor, ipon pa!';
-                    break;
-                default:
-                    ifElseDiv.textContent = 'Invalid choice';
-            }
-            ifElseDiv.style.color = 'green';
-        });
+        if(moneyy.value === "small" && n >= 39){
+          output = "You have ordered Little Kiss (Small). Enjoy your drink! 🥰";
+        } else if(moneyy.value === "medium" && n >= 69){
+          output = "You have ordered Sweet Cup (Medium). Enjoy your drink!🥰";
+        } else if(moneyy.value === "large" && n >= 85){
+          output = "You have ordered Warm Heart (Large). Enjoy your drink!🥰";
+        } else if(moneyy.value === "xl" && n >= 110){
+          output = "You have ordered Big Hug (XL). Enjoy your drink!🥰";
+        } else {
+          output = "Insufficient funds for the selected size. 😔";
+        }
+
+        resultDiv.textContent = output;
+        resultDiv.style.color = "violet";
+
+        //switch
+       
+      });
     </script>
-</body>
+  </body>
 </html>
