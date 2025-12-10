@@ -7,29 +7,79 @@
 </head>
 <body>
 
-    
-    <label for="num1">First Nummber:</label> 
-    <input id="number" type="num2" placeholder="Enter here"> <br>
-     <label for="num2">Second Nummber:</label>
-     <input id="num2" type="num2" placeholder="Enter here">   <br>  
-    <button id="add">answer</button>
-    <p id="insert"></p>
-    
-    <h4 id="ict"></h4>
-    <p id="competence"></p>
-    
+    <h2>This is Addition</h2>
+    <label for="num1"> </label>
+    <input type="text" id="num1" name="num1" placeholder="First Number"><br>
+
+    <label for="num2"></label>
+    <input type="text" id="num2" name="num2" placeholder="Second Number"><br>
+    <br>
+    <button id="addNumbers">To Add </button>
+
+    <p id="insert">Sum</p>
+
+    <!-- Subtraction Part -->
+    <h2>This is Subtraction</h2>
+     <label for="minu1"> </label>
+    <input type="text" id="minu1" name="minu1" placeholder="Minus Frist"><br>
+
+    <label for="nimu2"></label>
+    <input type="text" id="nimu2" name="nimu2" placeholder="Minus Second"><br>
+    <br>
+    <button id="Subtraction">To Subtract </button>
+
+    <p id="Difference">Difference</p>
+
+    <!--Thisis Divition-->
+    <h2>This is Division</h2>
+     <label for="minu1"> </label>
+    <input type="text" id="minu1" name="minu1" placeholder="Minus Frist"><br>
+
+    <label for="nimu2"></label>
+    <input type="text" id="nimu2" name="nimu2" placeholder="Minus Second"><br>
+    <br>
+    <button id="Subtraction">To Subtract </button>
+
+    <p id="Difference">Difference</p>
+
     <script>
-        const add1 = document.getElementById("num1");
-        const num2 = document.getElementById("num2");
-        const insert = document.getElementById("add");
+        const addNumbers = document.getElementById("addNumbers");
+        const insert = document.getElementById("insert");
+
         
-        addName.addEventListener("click", () => {
-            const addends1 =Number (add1.value);
-            const addensd2= Number(num2.value);
-          insert.textContent='the sum is '
-                $
-                {addensd1 + addends2};
+        const num1 = document.getElementById("num1").value;
+        const num2 = document.getElementById("num2").value;
+        document.getElementById("insert").innerText = `Anwer ${num1}  ${num2}`;
+
+        addNumbers.addEventListener("click", function() {
+            const firstnum = document.getElementById("num1").value;
+            const secondnum = document.getElementById("num2").value;
+            const sum = Number(firstnum) + Number(secondnum);
+            console.log(sum);
+            document.getElementById("insert").innerText = `Sum: ${sum}`;
         });
+
+
+        // Subtraction Part
+         const Subtraction = document.getElementById("Subtraction");
+        const Difference = document.getElementById("Difference");
+
+        
+        const minu1 = document.getElementById("minu1").value;
+        const nimu2 = document.getElementById("nimu2").value;
+        document.getElementById("Difference").innerText = `Anwer ${minu1}  ${nimu2}`;
+
+        Subtraction.addEventListener("click", function() {
+            const minuend = document.getElementById("minu1").value;
+            const subtrahend = document.getElementById("nimu2").value;
+            const sum = Number(minuend) - Number(subtrahend);
+            console.log(sum);
+            document.getElementById("Difference").innerText = `Answer: ${sum}`;
+        });
+      
+
+        // Division Part
+         
     </script>
 </body>
 </html>
