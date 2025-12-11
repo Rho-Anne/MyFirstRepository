@@ -106,6 +106,24 @@
             console.log(sum);
             document.getElementById("answer").innerText = `Quotient: ${sum}`;
         });
+
+
+        // Multiplication Part
+         const product = document.getElementById(" multip");
+        const multip = document.getElementById("product");
+
+        
+        const factor1 = document.getElementById("factor1").value;
+        const factor2 = document.getElementById("factor2").value;
+        document.getElementById("product").innerText = `Anwer ${factor1}  ${factor2}`;
+
+       multip.addEventListener("click", function() {
+            const factor1 = document.getElementById("factor1").value;
+            const factor2 = document.getElementById("factor2").value;
+            const sum = Number(factor1) * Number(factor2);
+            console.log(sum);
+            document.getElementById("product").innerText = `Quotient: ${sum}`;
+        });
       
          
     </script>
