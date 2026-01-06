@@ -1,49 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tanggol v.s Rigor</title>
-</head>
-<body>
+  </head>
+  <body>
+    <h1>hello</h1>
     <script>
-        function hero(health, stamina, strength) {
-            this.health = 100;
-            this.stamina = 50;
-            this.strength = 50;
-        }
+      function bida(health, stamina, strength, blood) {
+        this.health = 100;
+        this.stamina = 50;
+        this.strength = 50;
+        this.blood = 100;
+      }
 
-        function weapon(damage, durability) {
-            this.damage = 10;
-            this.durability = 100;
-        }
+      function police(health, stamina, strength, blood) {
+        this.health = 100;
+        this.stamina = 50;
+        this.strength = 50;
+        this.blood = 100;
+      }
 
-        const tanggol = new hero();
-       const rigor = new hero();
+      function Rifles(damage, durability) {
+        this.damage = 10;
+        this.durability = 100;
+      }
 
-       tanggol.health = 80;
-       console.log("tanggol", tanggol);
-       rigor.health = 90;  
-         console.log("rigor", rigor);
-       rigor.health = 90;
-       console.log("rigor's health:", rigor.health);
-       tanggol.armor = 80;
-       console.log("tanggol's armor:", tanggol.armor);
-       rigor.stamina = 100;
-       console.log("rigor's stamina:", rigor.stamina);  
-       
-         const gun = new weapon();
-        const gun1 = new weapon();
+       function Sniper(damage, durability) {
+        this.damage = 10;
+        this.durability = 100;
+      }
+
+      const tanggol = new bida();
+      const rigor = new police();
+      //100
+
+      console.log("tanggol", tanggol);
+      console.log("rigor", rigor);
+      tanggol.health = 85;
+      rigor.health = 90;
+
+      console.log("Updating Property Values");
+
+      
+      console.log("tanggol's health:", tanggol.health);
+      console.log("rigor's health:", rigor.health);
+      
+       console.log("There wepon");
+
+      const gun = new  Rifles();
+      const gun1 = new Sniper();
+
+      tanggol.weapon = gun1;
+      rigor.weapon = gun;
+      tanggol.weapon.damage = 100;
+      rigor.weapon.damage = 50;
+      console.log("tanggol's weapon damage:", tanggol.weapon);
+      console.log("rigor's weapon durability:", rigor.weapon);
+
+       console.log("Deliting Property ");
+
+       console.log("Rigor after matamaan ng sniper ni Tanggol ");
         
-        tanggol.weapon = gun;
-        rigor.weapon = gun1;
-        tanggol.weapon.damage = 25;
-        rigor.weapon.durability = 80;
-        console.log("tanggol's weapon damage:", tanggol.weapon);
-        console.log("rigor's weapon durability:", rigor.weapon);
-    
-
 
     </script>
-</body>
+  </body>
 </html>

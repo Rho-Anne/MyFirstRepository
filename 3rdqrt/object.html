@@ -1,48 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-        // JavaScript Object Example
-        function hero(health, mana, strength) {
-            this.health = 100;
-            this.mana = 50;
-            this.strength = 20;
-        }
+      // JavaScript Object Example
+      function hero(health, mana, strength) {
+        this.health = 100;
+        this.mana = 50;
+        this.strength = 20;
+      }
 
-        function weapon(damage, durability) {
-            this.damage = 15;
-            this.durability = 100;
-        }
+      function weapon(damage, durability) {
+        this.damage = 15;
+        this.durability = 100;
+      }
 
-       const nana = new hero();
-       const hanabi = new hero();
+      const nana = new hero();
+      const hanabi = new hero();
 
-       
-       nana.health = 50;
-       hanabi.health = 50;  
-        console.log("nana", nana);
-         console.log("hanabi", hanabi);
-       hanabi.health = 5;
-       console.log("hanabi's health:", hanabi.health);
-       nana.armor = 10;
-       console.log("nana's armor:", nana.armor);
-       hanabi. stamina = 100;
-       console.log("hanabi's stamina:", hanabi.stamina);
+      nana.health = 50;
+      hanabi.health = 50;
+      console.log("nana", nana);
+      console.log("hanabi", hanabi);
 
-        const sword = new weapon();
-        const bow = new weapon();
-        
-        nana.weapon = sword;
-        hanabi.weapon = bow;
-        nana.weapon.damage = 25;
-        hanabi.weapon.durability = 80;
-        console.log("nana's weapon damage:", nana.weapon);
-        console.log("hanabi's weapon durability:", hanabi.weapon);
+      hanabi.health = 5;
+      console.log("hanabi's health:", hanabi.health);
+      nana.armor = 10;
+      console.log("nana's armor:", nana.armor);
+      hanabi.stamina = 100;
+      console.log("hanabi's stamina:", hanabi.stamina);
+
+      const sword = new weapon();
+      const bow = new weapon();
+
+      nana.weapon = sword;
+      hanabi.weapon = bow;
+      nana.weapon.damage = 25;
+      hanabi.weapon.durability = 80;
+      console.log("nana's weapon damage:", nana.weapon);
+      console.log("hanabi's weapon durability:", hanabi.weapon);
     </script>
-</body>
+  </body>
 </html>
