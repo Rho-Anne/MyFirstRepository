@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanggol v.s Rigor</title>
+</head>
+<body>
+    <script>
+        function hero(health, stamina, strength) {
+            this.health = 100;
+            this.stamina = 50;
+            this.strength = 50;
+        }
+
+        function weapon(damage, durability) {
+            this.damage = 10;
+            this.durability = 100;
+        }
+
+        const tanggol = new hero();
+       const rigor = new hero();
+
+       tanggol.health = 80;
+       console.log("tanggol", tanggol);
+       rigor.health = 90;  
+         console.log("rigor", rigor);
+       rigor.health = 90;
+       console.log("rigor's health:", rigor.health);
+       tanggol.armor = 80;
+       console.log("tanggol's armor:", tanggol.armor);
+       rigor.stamina = 100;
+       console.log("rigor's stamina:", rigor.stamina);  
+       
+         const gun = new weapon();
+        const gun1 = new weapon();
+        
+        tanggol.weapon = gun;
+        rigor.weapon = gun1;
+        tanggol.weapon.damage = 25;
+        rigor.weapon.durability = 80;
+        console.log("tanggol's weapon damage:", tanggol.weapon);
+        console.log("rigor's weapon durability:", rigor.weapon);
+    
+
+
+    </script>
+</body>
+</html>
