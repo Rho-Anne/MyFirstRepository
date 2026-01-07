@@ -12,15 +12,39 @@
         this.health = 100;
         this.mana = 50;
         this.strength = 20;
+        this.details = function () {
+          return `Health: ${this.health}, 
+          Mana: ${this.mana}, 
+          Strength: ${this.strength}`;
+        }
+
+         this.attack = function(enemy) {
+       enemy.health -= 10;
+       this.strength += 5;
+       return`After attack - ${enemy.health}: Hero stamina ${this.stamina} `;
       }
+
+      }
+
+      this.attack = function(enemy) {
+       enemy.health -= 10;
+       this.strength += 5;
+       return`After attack - ${enemy.health}: Hero stamina ${this.stamina} `;
+      }
+
 
       function weapon(damage, durability) {
         this.damage = 15;
         this.durability = 100;
       }
 
-      const nana = new hero();
+      console.log("Hero Objects");
       const hanabi = new hero();
+      hanabi.rage = function() {
+        this.strength += 20;
+        this.mana -= 15;
+        this.health -= 10;
+      }
 
       nana.health = 50;
       hanabi.health = 50;
@@ -43,6 +67,27 @@
       hanabi.weapon.durability = 80;
       console.log("nana's weapon damage:", nana.weapon);
       console.log("hanabi's weapon durability:", hanabi.weapon);
+      console.log("hanabi's details:", hanabi.details());
+     
+      console.log("Hero Objects");
+      const hanabi = new hero();
+      hanabi.rage = function() {
+        this.strength += 20;
+        this.mana -= 15;
+        this.health -= 10;
+      };
+
+      console.log("hanabi", hanabi);
+
+      hanabi.accuracy = 90;
+      hanabi.headshot = function() {
+       this.mana
+       this.accuracy += 10;
+       return`Accuracy: ${this.accuracy}`
+      };
+
+      console.log("hanabi attak nana:", hanabi.accuracy);
+
     </script>
   </body>
 </html>
