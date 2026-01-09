@@ -2,20 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, 
+    initial-scale=1.0">
+    <title>Text Base Game</title>
     <link rel="stylesheet" href="game.css">
+    <script src="game.js"></script>
 </head>
 <body>
-    
-     <h1>Two-Player Text-Based Battle Game</h1>
+    <h1>Two-Player Text-Based Battle Game</h1>
     <div id="player-input">
         <input type="text" id="player1-name" placeholder=
         "Enter Player 1 name" oninput="validateNames()">
         <input type="text" id="player2-name" placeholder=
         "Enter Player 2 name" oninput="validateNames()"><br>
-        <button id="start-game" onclick="startBattle()" 
-        disabled>Start Game</button>
+        <button id="start-game" onclick="startGame()">Start Game</button>
     </div> <br>
     <div id="game-container">
         <div class="player-container" id="player1">
@@ -26,13 +26,14 @@
             <h3>Wins: <span id="player1-wins">0</span></h3>
 
 
-            <select id="player1-weapon">
-                <option value="Sword">Sword</option>
-                <option value="Axe">Axe</option>
-                <option value="Bow">Bow</option>
-            </select>
+            <div class="weapon-choices" id="player1-weapon">
+                <img src="" alt="submachine" data-weapon="submachine" class="weapon-img" onclick="selectWeapon(1,submachine,this)">
+                <img src="" alt="chopper" data-weapon="chopper" class="weapon-img" onclick="selectWeapon(1,chopper,this)">
+                <img src="" alt="sniper" data-weapon="sniper" class="weapon-img" onclick="selectWeapon(1,sniper,this)">
+                <input type="hidden" id="player1-weapon-value" value="">
+            </div>
             <button id="player1-attack" 
-            onclick="playerAttack(1)" disabled>Attack</button>
+            onclick="playerAttack(1)">Attack</button>
         </div>
         <div class="player-container" id="player2">
             <h2 id="player2-title">Player 2</h2>
@@ -40,15 +41,42 @@
             <div class="health-bar"><div id="player2-health-bar" 
                 class="health-bar-inner"></div></div>
             <h3>Wins: <span id="player2-wins">0</span></h3>
-            <select id="player2-weapon">
-                <option value="Sword">Sword</option>
-                <option value="Axe">Axe</option>
-                <option value="Bow">Bow</option>
-            </select>
+            <div class="weapon-choices" id="player2-weapon">
+                <img src="" alt="submachine" data-weapon="submachine" class="weapon-img" onclick="selectWeapon(2,submachine,this)">
+                <img src="" alt="chopper" data-weapon="chopper" class="weapon-img" onclick="selectWeapon(2,chopper,this)">
+                <img src="sniper.png" alt="sniper" data-weapon="sniper" class="weapon-img" onclick="selectWeapon(2,sniper,this)">
+                <input type="hidden" id="player2-weapon-value" value="">
+            </div>
             <button id="player2-attack" onclick="playerAttack(2)" 
-            disabled>Attack</button>
+            >Attack</button>
         </div>
     </div>
     <div id="game-log"><h3>Game Log</h3></div>
+    <script>
+
+    </script>
+    <!-- <script>
+        function setupWeaponSelectors(player) {
+            const container = document.getElementById(player + '-weapon');
+            const hidden = document.getElementById(player + '-weapon-value');
+            const attackBtn = document.getElementById(player + '-attack');
+            container.querySelectorAll('.weapon').forEach(img => {
+                img.addEventListener('click', () => {
+                    container.querySelectorAll('.weapon').forEach(i => i.classList.remove('selected'));
+                    img.classList.add('selected');
+                    hidden.value = img.dataset.weapon;
+                    if (attackBtn) attackBtn.disabled = false;
+                });
+            });
+        }
+        function getSelectedWeapon(player) {
+            return document.getElementById(player + '-weapon-value').value;
+        }
+        document.addEventListener('DOMContentLoaded', () => {
+            setupWeaponSelectors('player1');
+            setupWeaponSelectors('player2');
+        });
+    </script> -->
+    
 </body>
 </html>
