@@ -18,11 +18,14 @@ class Hero {
     //             ${this.weaponName}!`);
     //     }
     
-    message(`${this.name} has equipped a ${this.weaponName}`);
+    // message(`${this.name} has equipped a ${this.weaponName}`);
 
     // attack(opponent) {
-    //    log (`${this.name} attacks ${opponent.name}!`);
+    //    log (`${this.name} attacks ${opponent.name}
+    //      with a ${this.weaponName} for ${damage} damage!`);
+    //         opponent.takeDamage(damge);
     // }
+
 
 const weapon     = {
     submachine: {hitchane: 30},
@@ -59,10 +62,10 @@ hidden.value = weapon; }
 
  // highlight selection 
 
-  var container = document.getElementById('player' + player + '-weapon-choices'); 
- if (!container) return; var imgs = container.getElementsByClassName('weapon-img'); for (var i = 0; i < imgs.length; i++)
-  { imgs[i].classList.remove('weapon-selected'); } 
+//  var container = document.getElementById('player' + player + '-weapon-choices'); 
+//  if (!container) return; var imgs = container.getElementsByClassName('weapon-img'); for (var i = 0; i < imgs.length; i++)
+//   { imgs[i].classList.remove('weapon-selected'); } 
  
- imgElem.classList.add('weapon-selected'); 
-  messageLog(`${player} selected ${weapon} as their weapon.`); 
+//  imgElem.classList.add('weapon-selected'); 
+//   messageLog(`${player} selected ${weapon} as their weapon.`); 
 
