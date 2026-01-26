@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="second.css">
+</head>
+<body>
+    <header>
+  <h2>Quarter 1</h2>
+</header>
+
+<section class="flex">
+  <nav>
+    <ul>
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="myfirstjavacopy.html">First Java</a></li>
+      <li><a href="syntax copy.html">Syntax</a></li>
+      <li><a href="variable copy.html">Variable</a></li>
+      <li><a href="operation.html">Operation</a></li>
+      <li><a href="ifelse copy.html">If Condition</a></li>
+      <li><a href="return copy.html">Return</a></li>
+      <li><a href="loop copy.html">Loop</a></li>
+      <li><a href="string copy.html">String</a></li>
+      <li><a class="active">Object</a></li>
+    </ul>
+  </nav>
+  
+  <article class="act">
+     <h1>Tanggol Vs Rigor</h1>
+    <script>
+      function bida(health, stamina, strength, blood) {
+        this.health = 100;
+        this.stamina = 50;
+        this.strength = 50;
+        this.blood = 100;
+      }
+
+      function police(health, stamina, strength, blood) {
+        this.health = 100;
+        this.stamina = 50;
+        this.strength = 50;
+        this.blood = 100;
+      }
+
+      function Rifles(damage, durability) {
+        this.damage = 10;
+        this.durability = 100;
+      }
+
+       function Sniper(damage, durability) {
+        this.damage = 10;
+        this.durability = 100;
+      }
+
+      const tanggol = new bida();
+      const rigor = new police();
+      //100
+
+      console.log("tanggol", tanggol);
+      console.log("rigor", rigor);
+      tanggol.health = 85;
+      rigor.health = 90;
+
+      console.log("Updating Property Values");
+
+      
+      console.log("tanggol's health:", tanggol.health);
+      console.log("rigor's health:", rigor.health);
+      
+       console.log("There wepon");
+
+      const gun = new  Rifles();
+      const gun1 = new Sniper();
+
+      tanggol.weapon = gun1;
+      rigor.weapon = gun;
+      tanggol.weapon.damage = 100;
+      rigor.weapon.damage = 50;
+      console.log("tanggol's weapon damage:", tanggol.weapon);
+      console.log("rigor's weapon durability:", rigor.weapon);
+
+       console.log("Deliting Property ");
+        delete rigor.health;
+        console.log("rigor's dead",);
+
+    </script>
+  </article>
+</section>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="second.css">
+</head>
+<body>
+    <header>
+  <h2>Quarter 1</h2>
+</header>
+
+<section class="flex">
+  <nav>
+    <ul>
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="myfirstjavacopy.html">First Java</a></li>
+      <li><a href="syntax copy.html">Syntax</a></li>
+      <li><a class="active">Variable</a></li>
+      <li><a href="CSS.HTML">Operation</a></li>
+      <li><a href="Quiz copy.html">If Condition</a></li>
+      <li><a href="mapping image copy.html">Return</a></li>
+      <li><a href="table copy.html">Loop</a></li>
+      <li><a href="CSS.HTML">Calculator</a></li>
+      <li><a href="Quiz copy.html">Activity</a></li>
+      <li><a href="mapping image copy.html">String</a></li>
+      <li><a href="table copy.html">Object</a></li>
+    </ul>
+  </nav>
+  
+  <article class="act">
+     <h1>Helor</h1>
+
+    <button type="button" onclick="private_var()">Makikita mo</button>
+    <script>
+        let x =-90;
+        let y = 4;
+        console.log(x + y);
+        
+        y = 10;
+        x = 20;
+        console.log(x + y);
+
+        const z = 67;
+        console.log(z);
+
+        function private_var() {
+           let _x = 69;
+           console.log(_x);
+        }
+
+        var $ = "This is valid ";
+        let $$ = "This is also valid ";
+        const $$$valid = "This is also valid ";
+        console.log($);
+        console.log($$);    
+        console.log($$$valid);
+        let declareVar // variable declaration
+        declareVar = "Declared variable";
+        console.log(declareVar);
+
+        const price1 = 10; // variable declaration and initialization
+        const price2 = 50;
+        let total = price1 + price2; // using undeclared variables
+        console.log(total);
+
+        autoVar = "This is an auto global variable";
+        autoVar2 = "This is also an auto global variable";
+        console.log(autoVar);
+
+        let num1 = 5;
+        let num2 = 10;
+        let num3 = 15;
+        console.log(+ num1 +num2+ num3);
+
+        let a = "anne", b = "aw", c = "cat";
+        console.log(a + b + c);
+
+        let added1 = 25, addend2 = 35, addend3 = 40;
+        let sum= added1 + addend2 + addend3;
+        console.log(sum);
+        
+        let minuend = 20, subtrahend = 10;
+        let difference = minuend - subtrahend;
+
+        console.log(difference);
+
+        let globalVar = "I am a global variable";
+        { 
+            let localVar = "I am a local variable";
+             console.log(globalVar);
+             console.log(localVar); 
+        }
+
+        
+    // This will cause an error because localVar is not defined in this scope
+
+       
+    
+    let numBig = 6666666666777777;
+    let BigInt = 666666666666666666666666666667777777777777777777777777777777777n;
+    console.log(numBig);
+    console.log(BigInt);
+    </script>
+  </article>
+</section>
+</body>
+</html>

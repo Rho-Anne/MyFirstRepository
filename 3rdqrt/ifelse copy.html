@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="second.css">
+</head>
+<body>
+    <header>
+  <h2>Quarter 1</h2>
+</header>
+
+<section class="flex">
+  <nav>
+    <ul>
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="myfirstjavacopy.html">First Java</a></li>
+      <li><a href="syntax copy.html">Syntax</a></li>
+      <li><a href="variable copy.html">Variable</a></li>
+      <li><a href="operation.html">Operation</a></li>
+      <li><a class="active">If Condition</a></li>
+      <li><a href="return copy.html">Return</a></li>
+      <li><a href="loop copy.html">Loop</a></li>
+      <li><a href="string copy.html">String</a></li>
+      <li><a href="object2 copy.html">Object</a></li>
+    </ul>
+  </nav>
+  
+  <article class="act">
+      <h1>Conditional</h1>
+    <script>
+       // 1. Array of choices for the computer
+let choices = ["rock", "paper", "scissors"];
+
+// 2. Computer randomly chooses one
+let computer = choices[Math.floor(Math.random() * 3)];
+
+// 3. Ask player for input
+let player = prompt("Choose rock, paper, or scissors").toLowerCase();
+
+// 4. Compare player and computer choices
+if (player === computer) {
+    // This runs if both chose the same
+    alert("It's a tie! Computer also chose " + computer);
+} 
+else if (
+    (player === "rock" && computer === "scissors") ||
+    (player === "paper" && computer === "rock") ||
+    (player === "scissors" && computer === "paper")
+) {
+    // This runs if player wins
+    alert("You win! Computer chose " + computer);
+} 
+else {
+    // This runs if player loses
+    alert("You lose! Computer chose " + computer);
+}
+</script>
+  </article>
+</section>
+</body>
+</html>

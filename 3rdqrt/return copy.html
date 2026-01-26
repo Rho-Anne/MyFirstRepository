@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="second.css">
+</head>
+<body>
+    <header>
+  <h2>Quarter 1</h2>
+</header>
+
+<section class="flex">
+  <nav>
+    <ul>
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="myfirstjavacopy.html">First Java</a></li>
+      <li><a href="syntax copy.html">Syntax</a></li>
+      <li><a href="colorcopy.html">Variable</a></li>
+      <li><a href="CSS.HTML">Operation</a></li>
+      <li><a href="Quiz copy.html">If Condition</a></li>
+      <li><a class="active">Return</a></li>
+      <li><a href="table copy.html">Loop</a></li>
+      <li><a href="CSS.HTML">Calculator</a></li>
+      <li><a href="Quiz copy.html">Activity</a></li>
+      <li><a href="mapping image copy.html">String</a></li>
+      <li><a href="table copy.html">Object</a></li>
+    </ul>
+  </nav>
+  
+  <article class="act">
+     <p id="demo"></p>
+
+    <script>
+        function f (x){
+            return x;
+        }
+        alert(f(5))
+
+        function g(x){
+            return x +1;
+        }
+        console.log(g(45));
+        let result = g(10);
+
+        function areaSquare(side){
+            return side * side;
+        }
+
+        let demo = document.getElementById("demo");
+        demo.textContent = "Are of square " + areaSquare(4);
+
+        function BMI (weight, height){
+            return weight / (height*height);
+        }
+        console.log("Your BMI is " + BMI(55, 89));
+    </script>
+  </article>
+</section>
+</body>
+</html>
