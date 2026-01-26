@@ -52,4 +52,18 @@ select {
 .weapon-img {
   width: 90px;
   height: 90px;
+  cursor: pointer;
+  border: 3px solid transparent;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.weapon-img:hover {
+  transform: scale(1.1);
+  border-color: #0a0a0a;
+}
+
+.weapon-img.selected {
+  border: 3px solid #00ff00;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
 }
