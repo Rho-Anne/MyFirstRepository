@@ -9,9 +9,33 @@
 <body>
     <h1>Conditional</h1>
     <script>
-        console.log("My Conditional");
-        let money = 100;
-        if (money >= 90 ){}
+       // 1. Array of choices for the computer
+let choices = ["rock", "paper", "scissors"];
+
+// 2. Computer randomly chooses one
+let computer = choices[Math.floor(Math.random() * 3)];
+
+// 3. Ask player for input
+let player = prompt("Choose rock, paper, or scissors").toLowerCase();
+
+// 4. Compare player and computer choices
+if (player === computer) {
+    // This runs if both chose the same
+    alert("It's a tie! Computer also chose " + computer);
+} 
+else if (
+    (player === "rock" && computer === "scissors") ||
+    (player === "paper" && computer === "rock") ||
+    (player === "scissors" && computer === "paper")
+) {
+    // This runs if player wins
+    alert("You win! Computer chose " + computer);
+} 
+else {
+    // This runs if player loses
+    alert("You lose! Computer chose " + computer);
+}
+
     </script>
 </body>
 </html>

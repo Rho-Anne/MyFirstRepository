@@ -2,9 +2,11 @@
   background-color: #715A5A;
   border: 5px solid #37353E;
   border-radius: 10%;
-  height: 33rem;
-  width:30rem ;
-  padding-left: 2%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10%;
+  padding: 2%;
   color: #D3DAD9;
 }
 

@@ -1,7 +1,6 @@
 div {
 	display: flex;
-	gap: 10px;
-    margin: 5%;
+    margin: 4%;
 }
 
 .fruits {
@@ -11,8 +10,8 @@ div {
 	border-radius: 25px;
 	margin-bottom: 20px;
 	background-color: #555879;
-	padding: 10px;
-	width: 30rem;
+	padding: 	px;
+	width: 25rem;
 	height: 19rem;
 	
 }
@@ -25,7 +24,7 @@ div {
 	margin-bottom: 20px;
 	background-color: #555879;
 	padding: 10px;
-	width: 30rem;
+	width: 25rem;
 	height: 18rem;
 	
 }
