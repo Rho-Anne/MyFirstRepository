@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="second.css">
+</head>
+<body>
+    <header>
+  <h2>Quarter 1</h2>
+</header>
+
+<section class="flex">
+  <nav>
+    <ul>
+      <li><a href="/MyFirstRepository/index.html">Home</a></li>
+      <li><a href="myfirstjavacopy.html">First Java</a></li>
+      <li><a href="syntax copy.html">Syntax</a></li>
+      <li><a href="variable copy.html">Variable</a></li>
+      <li><a href="conditional copy.html">Conditional</a></li>
+      <li><a href="operation.html">Operation</a></li>
+      <li><a href="ifelse copy.html">If Condition</a></li>
+      <li><a href="return copy.html">Return</a></li>
+      <li><a href="loop copy.html">Loop</a></li>
+      <li><a href="string copy.html">String</a></li>
+      <li><a href="object2 copy.html">Object</a></li>
+      <li><a href=""></a></li>
+    </ul>
+  </nav>
+  
+  <article class="act">
+    <link rel="stylesheet" href="game.css" />
+
+    <h1>Two-Player Text-Based Battle Game</h1>
+    <div id="player-input">
+      <input
+        type="text"
+        id="player1-name"
+        placeholder="Enter Player 1 name"
+        oninput="validateNames()"
+      />
+      <input
+        type="text"
+        id="player2-name"
+        placeholder="Enter Player 2 name"
+        oninput="validateNames()"
+      /><br />
+      <button id="start-game" onclick="startGame()">Start Game</button>
+    </div>
+    <br />
+    <div id="game-container">
+      <div class="player-container" id="player1">
+        <h2 id="player1-title">Player 1</h2>
+        <h3 id="player1-health">Health: 120</h3>
+        <div class="health-bar">
+          <div id="player1-health-bar" class="health-bar-inner"></div>
+        </div>
+
+        <div class="weapon-choices" id="player1-weapon">
+          <img
+            src="pistol-removebg-preview.png"
+            alt="pistol"
+            data-weapon="pistol"
+            class="weapon-img"
+            onclick="selectWeapon(1, 'pistol')"
+          />
+          <img
+            src="Remington_870_12_gauge_shotgun__-removebg-preview.png"
+            alt="shotgun"
+            data-weapon="shotgun"
+            class="weapon-img"
+            onclick="selectWeapon(1, 'shotgun')"
+          />
+          <img
+            src="All_assassins_need_a_good_sniper_rifle-removebg-preview.png"
+            alt="sniper"
+            data-weapon="sniper"
+            class="weapon-img"
+            onclick="selectWeapon(1, 'sniper')"
+          />
+          <input type="hidden" id="player1-weapon-value" value="" />
+        </div>
+        <button id="player1-attack" onclick="playerAttack(1)">Attack</button>
+      </div>
+      <div class="player-container" id="player2">
+        <h2 id="player2-title">Player 2</h2>
+        <h3 id="player2-health">Health: 120</h3>
+        <div class="health-bar">
+          <div id="player2-health-bar" class="health-bar-inner"></div>
+        </div>
+
+        <div class="weapon-choices" id="player2-weapon">
+          <img
+            src="pistol-removebg-preview.png"
+            alt="pistol"
+            data-weapon="pistol"
+            class="weapon-img"
+            onclick="selectWeapon(2, 'pistol')"
+          />
+          <img
+            src="Remington_870_12_gauge_shotgun__-removebg-preview.png"
+            alt="shotgun"
+            data-weapon="shotgun"
+            class="weapon-img"
+            onclick="selectWeapon(2, 'shotgun')"
+          />
+          <img
+            src="All_assassins_need_a_good_sniper_rifle-removebg-preview.png"
+            alt="sniper"
+            data-weapon="sniper"
+            class="weapon-img"
+            onclick="selectWeapon(2, 'sniper')"
+          />
+          <input type="hidden" id="player2-weapon-value" value="" />
+        </div>
+        <button id="player2-attack" onclick="playerAttack(2)">Attack</button>
+      </div>
+    </div>
+    <div id="game-log"><h3>Game Log</h3></div>
+    <script src="game.js"></script>
+    <!-- <script>
+        function setupWeaponSelectors(player) {
+            const container = document.getElementById(player + '-weapon');
+            const hidden = document.getElementById(player + '-weapon-value');
+            const attackBtn = document.getElementById(player + '-attack');
+            container.querySelectorAll('.weapon').forEach(img => {
+                img.addEventListener('click', () => {
+                    container.querySelectorAll('.weapon').forEach(i => i.classList.remove('selected'));
+                    img.classList.add('selected');
+                    hidden.value = img.dataset.weapon;
+                    if (attackBtn) attackBtn.disabled = false;
+                });
+            });
+        }
+        function getSelectedWeapon(player) {
+            return document.getElementById(player + '-weapon-value').value;
+        }
+        document.addEventListener('DOMContentLoaded', () => {
+            setupWeaponSelectors('player1');
+            setupWeaponSelectors('player2');
+        });
+    </script> -->
+  </article>
+</section>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="second.css">
+</head>
+<body>
+    <header>
+  <h2>Quarter 1</h2>
+</header>
+
+<section class="flex">
+  <nav>
+    <ul>
+      <li><a href="/MyFirstRepository/index.html">Home</a></li>
+      <li><a href="myfirstjavacopy.html">First Java</a></li>
+      <li><a href="syntax copy.html">Syntax</a></li>
+      <li><a href="variable copy.html">Variable</a></li>
+      <li><a href="conditional copy.html">Conditional</a></li>
+      <li><a href="operation.html">Operation</a></li>
+      <li><a href="ifelse copy.html">If Condition</a></li>
+      <li><a href="return copy.html">Return</a></li>
+      <li><a href="loop copy.html">Loop</a></li>
+      <li><a class="active">String</a></li>
+      <li><a href="object2 copy.html">Object</a></li>
+      <li><a href="game copy.html">Game</a></li>
+    </ul>
+  </nav>
+  
+  <article class="act">
+    <h2>This is Addition</h2>
+    <label for="num1"> </label>
+    <input type="text" id="num1" name="num1" placeholder="Addend One"><br>
+
+    <label for="num2"></label>
+    <input type="text" id="num2" name="num2" placeholder="Addend Two"><br>
+    <br>
+    <button id="addNumbers">To Add </button>
+
+    <p id="insert">Sum</p>
+
+    <!-- Subtraction Part -->
+    <h2>This is Subtraction</h2>
+     <label for="minu1"> </label>
+    <input type="text" id="minu1" name="minu1" placeholder="Minuend"><br>
+
+    <label for="nimu2"></label>
+    <input type="text" id="nimu2" name="nimu2" placeholder="Subtrahend"><br>
+    <br>
+    <button id="Subtraction">To Subtract </button>
+
+    <p id="Difference">Difference</p>
+
+    <!--Thisis Divition-->
+    <h2>This is Division</h2>
+     <label for="dividen1"> </label>
+    <input type="text" id="dividen1" name="dividen1" placeholder="Dividend"><br>
+
+    <label for="dividen2"></label>
+    <input type="text" id="dividen2" name="dividen2" placeholder="Divisor"><br>
+    <br>
+    <button id="division">To Divide </button>
+
+    <p id="answer">Quotient</p>
+
+    <!--Thisis Multiplication-->
+    <h2>This is Multiplication</h2>
+     <label for="factor1"> </label>
+    <input type="text" id="factor1" name="factor1" placeholder="Factor1"><br>
+
+    <label for="factor2"></label>
+    <input type="text" id="factor2" name="factor2" placeholder="Factor2"><br>
+    <br>
+    <button id="multip">To Multiply </button>
+
+    <p id="product">Product</p>
+
+    <script>
+        const addNumbers = document.getElementById("addNumbers");
+        const insert = document.getElementById("insert");
+
+        
+        const num1 = document.getElementById("num1").value;
+        const num2 = document.getElementById("num2").value;
+        document.getElementById("insert").innerText = `Anwer ${num1}  ${num2}`;
+
+        addNumbers.addEventListener("click", function() {
+            const firstnum = document.getElementById("num1").value;
+            const secondnum = document.getElementById("num2").value;
+            const sum = Number(firstnum) + Number(secondnum);
+            console.log(sum);
+            document.getElementById("insert").innerText = `Sum: ${sum}`;
+        });
+
+
+        // Subtraction Part
+         const Subtraction = document.getElementById("Subtraction");
+        const Difference = document.getElementById("Difference");
+
+        
+        const minu1 = document.getElementById("minu1").value;
+        const nimu2 = document.getElementById("nimu2").value;
+        document.getElementById("Difference").innerText = `Anwer ${minu1}  ${nimu2}`;
+
+        Subtraction.addEventListener("click", function() {
+            const minuend = document.getElementById("minu1").value;
+            const subtrahend = document.getElementById("nimu2").value;
+            const sum = Number(minuend) - Number(subtrahend);
+            console.log(sum);
+            document.getElementById("Difference").innerText = `Difference: ${sum}`;
+        });
+      
+
+        // Division Part
+         const division = document.getElementById("division");
+        const answer = document.getElementById("answer");
+
+        
+        const dividen1 = document.getElementById("dividen1").value;
+        const dividen2 = document.getElementById("dividen2").value;
+        document.getElementById("answer").innerText = `Anwer ${dividen1}  ${dividen2}`;
+
+        division.addEventListener("click", function() {
+            const dividen = document.getElementById("dividen1").value;
+            const quotient = document.getElementById("dividen2").value;
+            const sum = Number(dividen) / Number(quotient);
+            console.log(sum);
+            document.getElementById("answer").innerText = `Quotient: ${sum}`;
+        });
+
+
+        // Multiplication Part
+         const product = document.getElementById(" multip");
+        const multip = document.getElementById("product");
+
+        
+        const factor1 = document.getElementById("factor1").value;
+        const factor2 = document.getElementById("factor2").value;
+        document.getElementById("product").innerText = `Anwer ${factor1}  ${factor2}`;
+
+       multip.addEventListener("click", function() {
+            const factor1 = document.getElementById("factor1").value;
+            const factor2 = document.getElementById("factor2").value;
+            const sum = Number(factor1) * Number(factor2);
+            console.log(sum);
+            document.getElementById("product").innerText = `Quotient: ${sum}`;
+        });
+      
+         
+    </script>
+  </article>
+</section>
+</body>
+</html>
