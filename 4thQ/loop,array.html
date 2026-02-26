@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script> 
+        //indexof
+        const fruits = ["apple", "banana", "cherry","mango","carrot", "banana", "banana",];
+        let result = fruits.indexOf("banana");
+
+        console.log(result); 
+
+        //includes
+        const colors =["purple", "green", "blue"];
+        let cheak = colors.includes("black");
+        console.log(cheak);
+
+        //find
+        const numbers = ["a" , "b", "c", "d", "e", "f", "g", "h", "i", "j"];
+        let find  = numbers.find(myFunction);
+
+        function myFunction(value, index, array) {
+            return value < "d";
+        }
+        console.log(find);
+
+        //findindex
+        const num = [2,4,2,9];
+
+        let ans = num.findIndex(myFunction);
+
+        function myFunction(value, index, array) {
+            return value > 5;   
+        }
+
+        console.log(ans);
+
+        // 2nd day//
+
+        //sort
+
+        const names = ["Anne", "DazzlingPAnghe ", "David" , "Amethyst"];
+
+        let sort = names.sort();
+
+        console.log(sort);
+
+        //reverse
+        const reversedNames = ["Anne", "DazzlingPAnghe ", "David", "Amethyst"];
+
+        let reversed = reversedNames.reverse();
+
+        console.log(reversed);
+
+        //toReversed alphabetical order
+        const guns = ["AK-47", "M16", "G36", "MP5"];
+
+        let sorted_guns = guns.toReversed();
+
+        console.log(sorted_guns);
+
+        //toReversed numerical order
+        const numberss = [1, 200, 30, 4000, 5];
+
+        let reversed_numbers = numberss.toReversed(function(a, b) { 
+            return a - b;
+        });
+        console.log(reversed_numbers);
+
+        //random sort method
+        
+        const number = [1, 6, 3, 7, 5];
+
+        number.sort(function() {
+            return 0.2 - Math.random();
+        });
+        console.log(number);
+
+        //math.min
+        const numbs = [5, 2, 9, 0.6, 5, 6];   
+
+        let Lowest = Math.min(...numbs);    
+
+        console.log(Lowest);
+
+        // math.max
+        const numbs2 = [5, 2, 9, 0.6, 5, 6];
+
+        let Highest = Math.max(...numbs2);
+
+        console.log(Highest);
+
+        //home-made sort method
+        const nums = [5, 2, 907821461803894198747898048918478018, 0.6, 5, 6];
+
+        let len = nums.length;
+        let max = -  Infinity;
+
+        while (len--) {
+            if (nums[len] > max) {
+                max = nums[len];
+            }
+        }
+
+        console.log(max);
+
+
+        // union 
+
+        console.log ("Union")
+
+        const a = new Set(["a", "b", "c"]);
+        const b = new Set(["d", "e", "e"]);
+
+        const c = a.union(b);
+
+        // loops che che 
+
+        
+        // union is pag sasamahin yung set a and b
+        // intersection is kukunin yung mga element na meron sa set a at b                
+        //difference is kukunin lang yung element na sa a lang meron 
+        // symetric difference is hindi kukunin yung element na sa a at b lang meron, 
+        // kukunin yung element na sa a lang meron at sa b lang meron
+        //isSubset is true or false lang         
+        
+        // weakst dapat object lang ang ilagay para maging true pero pag hindi object false ang lalabas 
+        // garbage collection kapag walang nakitang reference sa isang object, awtomatikong tinatangal niya na agad.
+        // values must be object dahil gumagamit eto ng weak reference,
+        // kailangan yu
+        // tracking visitors ay ginagawa nya ay tinitignan yung mga visitors 
+        // automatic cleanup matatangal sa list yung variable 
+        // not iterable hindi pwedeng i loop yung weakset kaya hindi pwedeng gamitin sa for of loop, map, filter, reduce, at iba pang array methods
+        // limited methods 
+        // walang size property dahil anytime pwede mawala yung number dahil sa garbage collection
+        // bakit bawal gumamit ng loop sa weakset dahil hindi pwedeng i loop yung weakset kaya hindi pwedeng gamitin sa for of loop, map, filter, reduce, at iba pang array methods
+
+        // loops che che part
+
+        // for let i = 0; i <= 5; i++) {
+        //     console.log(i);
+        // }
+        // console.log("decreasing");
+        
+        // for let e = 5; e >= 0; e--) {
+        //     console.log(e);
+        // }
+        // console.log("decreasing"); 
+
+        // tatlong expression sa loop
+        // 3 iteration - nag dedeklara kung increment o nag dedecrement and 
+        // 1 inalization- umpisahan yung value ng variable
+        // 2 condition - kapag true magpapatuloy yung loop pero kapag false hihinto na yung loop
+        // ang loops ay ginagamit para ulitin ang isang value ng code para di kana mahirapan.
+        // let and console lang ang ginagamit sa loop scope dahil pag var hindi na mababago
+        
+        // dalawang uri ng loop
+        // loop - alam mag sstart at end point 
+        // for loop - Code muna bago condition,may condition, excat dapat
+        // do while loop - i rurun  nya muna yung code bago niya i cheak yung condition, i rurun isang beses kahit false yung condition, 
+        // GAGAWIN MUNA YUNG CONDITION BAGO YUNG 
+        
+
+    </script>
+</body>
+</html>

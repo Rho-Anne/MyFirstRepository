@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+  <body>
+   <h3>Sets</h3>
+   <h6>Union</h6>
+   <p id="Union"></p>
+
+   <script>
+    let friction = new Set(['Ana','Ben','Carl']);
+    let science = new Set (['Ben','Dana','Carl'])
+    
+    let union = friction.union(science);
+    console.log(union);
+
+    let intersection = friction.intersection(science);
+    console.log(intersection);
+
+    let difference = friction.difference(science);
+    console.log(difference);    
+
+    let symmetricDifference = friction.symmetricDifference(science);
+    console.log(symmetricDifference);
+   </script>
+    
+  </body>
+</html>
