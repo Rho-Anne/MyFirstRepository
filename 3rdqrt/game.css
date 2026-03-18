@@ -3,7 +3,7 @@ body {
   text-align: center;
   margin: 6px;
   color: #0a0a0a;
-  ;
+  background-image: url(background.png);
 }
 .game-container {
   display: flex;
@@ -11,22 +11,24 @@ body {
   border: 10% solid #000;
 }
 .player-container {
-  border: 1px solid #000;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 10px rgba(239, 131, 131, 0.1);
   padding: 10px;
   width: 40%;
-  background: #f9f9f9;
   display: inline-block;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(4px);
 }
 #game-log {
-  border: 1px solid #000;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   padding: 10px;
-  height: 200px;
+  height: 350px;
   overflow-y: auto;
   background: #f9f9f9;
   margin-top: 20px;
 
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.25);
 }
 
 button,
@@ -35,7 +37,9 @@ select {
   margin-top: 10px;
   padding: 10px;
   font-size: 16px;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.35);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  color: #111;
 }
 .health-bar {
   width: 100%;
@@ -66,5 +70,4 @@ select {
 .weapon-img.selected {
   border: 3px solid #00ff00;
   box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
-
 }

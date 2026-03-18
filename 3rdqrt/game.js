@@ -27,9 +27,9 @@ class Hero {
 // }
 
 const weapon = {
-  pistol: { hitchane: 30, damage: 15 },
-  shotgun: { hitchane: 30, damage: 15 },
-  sniper: { hitchane: 70, damage: 35 },
+  pistol: { hitchane: 50, damage: 15 },
+  shotgun: { hitchane: 40, damage: 25 },
+  sniper: { hitchane: 10, damage: 35 },
 };
 
 let player1, player2;

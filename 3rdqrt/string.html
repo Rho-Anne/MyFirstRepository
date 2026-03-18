@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>String</title>
+    <link rel="stylesheet" href="string.css">
 </head>
-<body>
+<body >
 
-    <h2>This is Addition</h2>
+    <div class="math-container">
+      <div class="math-row">
+        <div class="add">
+        <h2>This is Addition</h2>
     <label for="num1"> </label>
     <input type="text" id="num1" name="num1" placeholder="Addend One"><br>
 
@@ -17,7 +21,9 @@
     <button id="addNumbers">To Add </button>
 
     <p id="insert">Sum</p>
+    </div>
 
+    <div class="sub">
     <!-- Subtraction Part -->
     <h2>This is Subtraction</h2>
      <label for="minu1"> </label>
@@ -29,7 +35,11 @@
     <button id="Subtraction">To Subtract </button>
 
     <p id="Difference">Difference</p>
+    </div>
+      </div>
 
+      <div class="math-row">
+        <div class="div">
     <!--Thisis Divition-->
     <h2>This is Division</h2>
      <label for="dividen1"> </label>
@@ -41,7 +51,9 @@
     <button id="division">To Divide </button>
 
     <p id="answer">Quotient</p>
+    </div>
 
+    <div class="mult">
     <!--Thisis Multiplication-->
     <h2>This is Multiplication</h2>
      <label for="factor1"> </label>
@@ -50,10 +62,12 @@
     <label for="factor2"></label>
     <input type="text" id="factor2" name="factor2" placeholder="Factor2"><br>
     <br>
-    <button id="multip">To Multiply </button>
+    <button id="multip" style="color: #1F6F68;">To Multiply </button>
 
     <p id="product">Product</p>
-
+    </div>
+      </div>
+    </div>
     <script>
         const addNumbers = document.getElementById("addNumbers");
         const insert = document.getElementById("insert");
